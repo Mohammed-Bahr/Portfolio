@@ -28,7 +28,7 @@ export const stats = [
 
 export const nav = [
   { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About' },
+  { id: 'about', label: 'formAbout' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
