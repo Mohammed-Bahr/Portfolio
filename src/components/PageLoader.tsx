@@ -79,13 +79,15 @@ export function PageLoader({ minDuration = 1400, onDone }: PageLoaderProps) {
                 }}
               />
               <div
-                className="relative grid h-16 w-16 place-items-center rounded-2xl text-white shadow-glow"
+                className="relative grid h-16 w-auto place-items-center rounded-2xl text-white shadow-glow"
                 style={{
                   background:
                     "linear-gradient(135deg, var(--brand), var(--brand-2))",
                 }}
               >
-                <span className="font-display text-2xl font-bold">A</span>
+                <span className="font-display text-2xl font-bold">
+                  MohammedBahr
+                </span>
               </div>
             </div>
 
