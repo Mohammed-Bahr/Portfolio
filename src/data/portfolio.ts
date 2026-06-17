@@ -189,35 +189,88 @@ export const projects = [
   }
 ];
 
-export const testimonials = [
+// export const testimonials = [
+//   {
+//     name: 'Priya Shah',
+//     role: 'Product Lead, Nimbus Labs',
+//     avatar: 'https://i.pravatar.cc/120?img=47',
+//     quote:
+//       "Alex is the rare engineer who can both architect a system and obsess over a 4px gap in a button. Our product is meaningfully better because of him.",
+//   },
+//   {
+//     name: 'Daniel Okafor',
+//     role: 'Founder, Pixel Forge',
+//     avatar: 'https://i.pravatar.cc/120?img=33',
+//     quote:
+//       "We hired Alex for a small landing page. By month three he was running point on half our client work. Clients love him, and so do we.",
+//   },
+//   {
+//     name: 'Mei Tanaka',
+//     role: 'Design Director, Lumen',
+//     avatar: 'https://i.pravatar.cc/120?img=45',
+//     quote:
+//       "I've never seen an engineer ship a handoff as clean as Alex's. He doesn't just implement the design — he improves it.",
+//   },
+//   {
+//     name: 'Jonas Weber',
+//     role: 'CTO, Orbit DS',
+//     avatar: 'https://i.pravatar.cc/120?img=11',
+//     quote:
+//       "The detail in his motion work is next level. Our component library wouldn't feel half as alive without his contributions.",
+//   },
+// ];
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  issued: string;
+  description: string;
+  image: string;
+  credentialUrl?: string;
+  tags: string[];
+}
+
+export const certifications: Certification[] = [
   {
-    name: 'Priya Shah',
-    role: 'Product Lead, Nimbus Labs',
-    avatar: 'https://i.pravatar.cc/120?img=47',
-    quote:
-      "Alex is the rare engineer who can both architect a system and obsess over a 4px gap in a button. Our product is meaningfully better because of him.",
+    title: 'Front-End Web Development Internship Offer',
+    issuer: 'Elevvo',
+    issued: '2026-02-07',
+    description:
+      'An internship offer letter from Elevvo addressed to Mohammed Ahmed for a 1-month remote and self-paced Front-End Web Development internship. The program starts on February 8, 2026, and includes practical tasks, educational resources, and personalized feedback. A certificate is awarded upon completion.',
+    image: './elevvo.jpeg',
+    credentialUrl: '',
+    tags: ['Internship', 'Front-End Web Development', 'Remote', 'Elevvo'],
   },
   {
-    name: 'Daniel Okafor',
-    role: 'Founder, Pixel Forge',
-    avatar: 'https://i.pravatar.cc/120?img=33',
-    quote:
-      "We hired Alex for a small landing page. By month three he was running point on half our client work. Clients love him, and so do we.",
+    title: 'Ubuntu Linux Essentials',
+    issuer: 'Mahara-Tech',
+    issued: '2026-02-10',
+    description:
+      'A Certificate of Completion indicating that Mohammed Bahr successfully completed the "Ubuntu Linux Essentials" course. The course duration was 7 hours and 20 minutes. The certificate includes the verification code x9riYFbyUd and features a red checkmark seal and QR code.',
+    image: './Obuntu_Course.png',
+    credentialUrl: '',
+    tags: ['Linux', 'Ubuntu', 'Operating System', 'Mahara-Tech', 'Certificate'],
   },
   {
-    name: 'Mei Tanaka',
-    role: 'Design Director, Lumen',
-    avatar: 'https://i.pravatar.cc/120?img=45',
-    quote:
-      "I've never seen an engineer ship a handoff as clean as Alex's. He doesn't just implement the design — he improves it.",
+    title: 'ALX Professional Foundations Month 1 Completed',
+    issuer: 'ALX Africa',
+    issued: '',
+    description:
+      'An electronic badge certifying the completion of the first month of the ALX Professional Foundations program. The credential is issued to Mohammed Bahr by ALX Africa. The program is an online, foundational-level achievement spanning a total duration of 5 months.',
+    image: 'month.png',
+    credentialUrl: '',
+    tags: ['ALX Africa', 'Professional Foundations', 'Soft Skills', 'Achievement'],
   },
   {
-    name: 'Jonas Weber',
-    role: 'CTO, Orbit DS',
-    avatar: 'https://i.pravatar.cc/120?img=11',
-    quote:
-      "The detail in his motion work is next level. Our component library wouldn't feel half as alive without his contributions.",
-  },
+    title: 'MERN: React, NodeJS, Express & MongoDB in Arabic',
+    issuer: 'Udemy',
+    issued: '2026-04-22',
+    description:
+      'A Udemy certificate of completion indicating that Mohammed Bahr successfully completed the "MERN: React, NodeJS, Express & MongoDB in Arabic" course. The course was instructed by Yahya ElAraby and had a total duration of 13 hours.',
+    image: './Udemy_MERN_Certificate.jpg',
+    credentialUrl: '',
+    tags: ['MERN Stack', 'React', 'NodeJS', 'Express', 'MongoDB', 'Web Development', 'Udemy'],
+  }
 ];
 
 export const toolMarquee = [
