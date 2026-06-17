@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import { profile, stats } from "../data/portfolio";
+import { assetUrl } from "../utils";
 import {
   AnimatedSection,
   StaggerContainer,
@@ -36,7 +37,7 @@ export function About() {
             >
               <div className="overflow-hidden rounded-[calc(1.5rem-4px)]">
                 <motion.img
-                  src={profile.avatar}
+                  src={assetUrl(profile.avatar)}
                   alt={profile.name}
                   className="aspect-[4/5] w-full object-cover"
                   whileHover={{ scale: 1.04 }}

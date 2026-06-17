@@ -37,7 +37,7 @@ export function Footer() {
               Sitemap
             </div>
             <ul className="mt-3 grid grid-cols-2 gap-2 text-sm">
-              {['About', 'Skills', 'Experience', 'Projects', 'Testimonials', 'Contact'].map((l) => (
+              {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map((l) => (
                 <li key={l}>
                   <a
                     href={`#${l.toLowerCase()}`}

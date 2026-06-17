@@ -12,7 +12,6 @@ import { PageLoader } from "./components/PageLoader";
 import { Projects } from "./components/Projects";
 import { ScrollProgress } from "./components/ScrollProgress";
 import { Skills } from "./components/Skills";
-// import { Testimonials } from './components/Testimonials';
 
 export default function App() {
   const [ready, setReady] = useState(false);
@@ -48,7 +47,6 @@ export default function App() {
               <Skills />
               <Experience />
               <Projects />
-              {/*<Testimonials />*/}
               <Certifications />
               <Contact />
             </main>

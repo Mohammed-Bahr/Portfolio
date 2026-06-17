@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Award, ExternalLink, Calendar } from 'lucide-react';
 import { certifications } from '../data/portfolio';
 import { AnimatedSection, SectionEyebrow, StaggerContainer, StaggerItem } from './sections/AnimatedSection';
+import { assetUrl } from '../utils';
 
 export function Certifications() {
   return (
@@ -71,7 +72,7 @@ function CertCard({
       {/* Image section */}
       <div className="relative aspect-[16/10] overflow-hidden">
         <motion.img
-          src={cert.image}
+          src={assetUrl(cert.image)}
           alt={cert.title}
           className="h-full w-full object-cover"
           initial={{ scale: 1 }}

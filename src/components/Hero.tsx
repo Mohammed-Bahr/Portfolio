@@ -3,6 +3,7 @@ import { ArrowRight, ChevronDown, Sparkles } from "lucide-react";
 import { Dribbble, Github, Linkedin, Twitter } from "./Icons";
 import { useRef } from "react";
 import { profile } from "../data/portfolio";
+import { assetUrl } from "../utils";
 
 const iconMap = {
   github: Github,
@@ -230,7 +231,7 @@ export function Hero() {
                 style={{ background: "var(--bg-muted)" }}
               >
                 <img
-                  src={profile.avatar}
+                  src={assetUrl(profile.avatar)}
                   alt={profile.name}
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-110"
                   draggable={false}

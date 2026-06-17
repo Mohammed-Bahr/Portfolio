@@ -10,7 +10,7 @@ export const profile = {
   tagline:
     'I turn ideas into real products building modern Software applications, scalable backend systems, and automated infrastructure with a passion for continuous learning and innovation..',
   bio: `I'm a fullstack developer with 2+ years of experience turning ideas into products people love. I care about the details — type, motion, performance — and I love working at the intersection of design and engineering.`,
-  avatar: 'me.jpg',
+  avatar: '/me.jpg',
   resumeUrl: '/CV.pdf',
   socials: [
     { name: 'GitHub', url: 'https://github.com/Mohammed-Bahr', icon: 'github' },
@@ -32,7 +32,7 @@ export const nav = [
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
-  { id: 'testimonials', label: 'Testimonials' },
+
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -128,7 +128,7 @@ export const projects = [
     title: 'Courses & Projects',
     description: 'Assortment of coursework and class projects across systems, embedded, and web domains implemented in C, C++, Java, Assembly, and HTML.',
     tags: ['C++', 'Coursework', 'Embedded', 'Projects'],
-    image: './Projects.png',
+    image: '/Projects.png',
     live: 'https://github.com/Mohammed-Bahr/CoursesProjects',
     repo: 'https://github.com/Mohammed-Bahr/CoursesProjects',
     accent: 'from-indigo-500 to-cyan-400'
@@ -137,7 +137,7 @@ export const projects = [
     title: 'Data Structures & Algorithms',
     description: 'Implementations of fundamental data structures and algorithms in C++ and Python with tests and usage examples for learning and interview prep.',
     tags: ['C++', 'Data Structures', 'Algorithms', 'OOP', 'Graphs', 'Rust'],
-    image: './DataStructures&Algorithms.png',
+    image: '/DataStructures&Algorithms.png',
     live: 'https://github.com/Mohammed-Bahr/DS-Algorithms',
     repo: 'https://github.com/Mohammed-Bahr/DS-Algorithms',
     accent: 'from-indigo-500 to-cyan-400'
@@ -146,7 +146,7 @@ export const projects = [
     title: 'CPU Scheduler Simulator',
     description: 'Java simulator of multiple CPU scheduling algorithms (Preemptive SJF, Round Robin, Priority, AG) with context switching and performance metrics.',
     tags: ['Java', 'OS', 'Scheduling', 'Simulator'],
-    image: './CPU.png',
+    image: '/CPU.png',
     live: 'https://github.com/Mohammed-Bahr/CPU-Scheduler-Simulator',
     repo: 'https://github.com/Mohammed-Bahr/CPU-Scheduler-Simulator',
     accent: 'from-indigo-500 to-cyan-400'
@@ -155,7 +155,7 @@ export const projects = [
     title: 'OS Terminal',
     description: 'Java-based terminal/shell project implementing command parsing, basic process control, and OS-like utilities for educational systems work.',
     tags: ['Java', 'Shell', 'Systems', 'CLI'],
-    image: './Terminal.png',
+    image: '/Terminal.png',
     live: 'https://github.com/Mohammed-Bahr/OS_Terminal',
     repo: 'https://github.com/Mohammed-Bahr/OS_Terminal',
     accent: 'from-indigo-500 to-cyan-400'
@@ -164,7 +164,7 @@ export const projects = [
     title: 'Pattern Recognition',
     description: 'Python implementations of pattern recognition and ML workflows: preprocessing, feature extraction, model training, and evaluation.',
     tags: ['Python', 'Machine Learning', 'Pattern Recognition', 'Classification'],
-    image: './Pattern.png',
+    image: '/Pattern.png',
     live: 'https://github.com/Mohammed-Bahr/Pattern-Recognition',
     repo: 'https://github.com/Mohammed-Bahr/Pattern-Recognition',
     accent: 'from-indigo-500 to-cyan-400'
@@ -173,7 +173,7 @@ export const projects = [
     title: 'Digital Signals & Waves',
     description: 'Python notebooks and scripts for digital signal processing — sampling, Fourier analysis, filtering, and waveform visualization.',
     tags: ['Python', 'DSP', 'Signal Processing', 'Visualization'],
-    image: './Waves.png',
+    image: '/Waves.png',
     live: 'https://github.com/Mohammed-Bahr/DigitalSignals-Waves',
     repo: 'https://github.com/Mohammed-Bahr/DigitalSignals-Waves',
     accent: 'from-indigo-500 to-cyan-400'
@@ -182,7 +182,7 @@ export const projects = [
     title: 'Digital Clock',
     description: 'Responsive web-based digital clock built with JavaScript, HTML, and CSS featuring smooth animations and time display utilities.',
     tags: ['JavaScript', 'Frontend', 'Clock', 'HTML'],
-    image: './Clock.png',
+    image: '/Clock.png',
     live: 'https://github.com/Mohammed-Bahr/Digital_Clock',
     repo: 'https://github.com/Mohammed-Bahr/Digital_Clock',
     accent: 'from-indigo-500 to-cyan-400'
@@ -237,7 +237,7 @@ export const certifications: Certification[] = [
     issued: '2026-02-07',
     description:
       'An internship offer letter from Elevvo addressed to Mohammed Ahmed for a 1-month remote and self-paced Front-End Web Development internship. The program starts on February 8, 2026, and includes practical tasks, educational resources, and personalized feedback. A certificate is awarded upon completion.',
-    image: './elevvo.jpeg',
+    image: '/elevvo.jpeg',
     credentialUrl: '',
     tags: ['Internship', 'Front-End Web Development', 'Remote', 'Elevvo'],
   },
@@ -247,7 +247,7 @@ export const certifications: Certification[] = [
     issued: '2026-02-10',
     description:
       'A Certificate of Completion indicating that Mohammed Bahr successfully completed the "Ubuntu Linux Essentials" course. The course duration was 7 hours and 20 minutes. The certificate includes the verification code x9riYFbyUd and features a red checkmark seal and QR code.',
-    image: './Obuntu_Course.png',
+    image: '/Obuntu_Course.png',
     credentialUrl: '',
     tags: ['Linux', 'Ubuntu', 'Operating System', 'Mahara-Tech', 'Certificate'],
   },
@@ -257,7 +257,7 @@ export const certifications: Certification[] = [
     issued: '',
     description:
       'An electronic badge certifying the completion of the first month of the ALX Professional Foundations program. The credential is issued to Mohammed Bahr by ALX Africa. The program is an online, foundational-level achievement spanning a total duration of 5 months.',
-    image: 'month.png',
+    image: '/month.png',
     credentialUrl: '',
     tags: ['ALX Africa', 'Professional Foundations', 'Soft Skills', 'Achievement'],
   },
@@ -267,7 +267,7 @@ export const certifications: Certification[] = [
     issued: '2026-04-22',
     description:
       'A Udemy certificate of completion indicating that Mohammed Bahr successfully completed the "MERN: React, NodeJS, Express & MongoDB in Arabic" course. The course was instructed by Yahya ElAraby and had a total duration of 13 hours.',
-    image: './Udemy_MERN_Certificate.jpg',
+    image: '/Udemy_MERN_Certificate.jpg',
     credentialUrl: '',
     tags: ['MERN Stack', 'React', 'NodeJS', 'Express', 'MongoDB', 'Web Development', 'Udemy'],
   }

@@ -3,6 +3,7 @@ import { ArrowUpRight, Star } from "lucide-react";
 import { Github } from "./Icons";
 import { useState } from "react";
 import { projects } from "../data/portfolio";
+import { assetUrl } from "../utils";
 import { AnimatedSection } from "./sections/AnimatedSection";
 
 const filters = ["All", "Web app", "Open source", "Client work"] as const;
@@ -114,7 +115,7 @@ function ProjectCard({
         {/* Image */}
         <div className="relative aspect-[16/10] overflow-hidden">
           <motion.img
-            src={project.image}
+            src={assetUrl(project.image)}
             alt={project.title}
             className="h-full w-full object-cover"
             initial={{ scale: 1 }}
