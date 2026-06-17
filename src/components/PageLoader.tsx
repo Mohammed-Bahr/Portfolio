@@ -1,5 +1,5 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 interface PageLoaderProps {
   /** Minimum time the loader stays visible, in ms (avoids flash on fast loads). */
@@ -15,7 +15,10 @@ export function PageLoader({ minDuration = 1400, onDone }: PageLoaderProps) {
     const start = performance.now();
     let raf = 0;
     const tick = (now: number) => {
-      const pct = Math.min(100, Math.round(((now - start) / minDuration) * 100));
+      const pct = Math.min(
+        100,
+        Math.round(((now - start) / minDuration) * 100),
+      );
       setCount(pct);
       if (now - start < minDuration) {
         raf = requestAnimationFrame(tick);
@@ -37,9 +40,12 @@ export function PageLoader({ minDuration = 1400, onDone }: PageLoaderProps) {
         <motion.div
           key="loader"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.6, ease: [0.19, 1, 0.22, 1] } }}
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.6, ease: [0.19, 1, 0.22, 1] },
+          }}
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center"
-          style={{ background: 'var(--bg)' }}
+          style={{ background: "var(--bg)" }}
         >
           {/* Subtle gradient mesh background */}
           <div
@@ -47,7 +53,7 @@ export function PageLoader({ minDuration = 1400, onDone }: PageLoaderProps) {
             className="pointer-events-none absolute inset-0 opacity-60"
             style={{
               background:
-                'radial-gradient(60% 50% at 20% 20%, rgba(99,102,241,.25), transparent 60%), radial-gradient(50% 40% at 80% 70%, rgba(34,211,238,.25), transparent 60%)',
+                "radial-gradient(60% 50% at 20% 20%, rgba(99,102,241,.25), transparent 60%), radial-gradient(50% 40% at 80% 70%, rgba(34,211,238,.25), transparent 60%)",
             }}
           />
 
@@ -61,13 +67,23 @@ export function PageLoader({ minDuration = 1400, onDone }: PageLoaderProps) {
             <div className="relative">
               <motion.div
                 className="absolute inset-0 rounded-full blur-2xl"
-                style={{ background: 'linear-gradient(120deg, var(--brand), var(--brand-2))' }}
+                style={{
+                  background:
+                    "linear-gradient(120deg, var(--brand), var(--brand-2))",
+                }}
                 animate={{ scale: [1, 1.15, 1], opacity: [0.4, 0.7, 0.4] }}
-                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+                transition={{
+                  duration: 2.4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
               <div
                 className="relative grid h-16 w-16 place-items-center rounded-2xl text-white shadow-glow"
-                style={{ background: 'linear-gradient(135deg, var(--brand), var(--brand-2))' }}
+                style={{
+                  background:
+                    "linear-gradient(135deg, var(--brand), var(--brand-2))",
+                }}
               >
                 <span className="font-display text-2xl font-bold">A</span>
               </div>
@@ -75,21 +91,32 @@ export function PageLoader({ minDuration = 1400, onDone }: PageLoaderProps) {
 
             {/* Brand */}
             <div className="font-display text-lg font-semibold tracking-wide">
-              <span className="text-gradient">alex.dev</span>
+              <span className="text-gradient">
+                Hello sir i hope we work togather 😊
+              </span>
             </div>
 
             {/* Progress */}
             <div className="flex w-56 flex-col items-center gap-2">
-              <div className="h-1 w-full overflow-hidden rounded-full" style={{ background: 'var(--border)' }}>
+              <div
+                className="h-1 w-full overflow-hidden rounded-full"
+                style={{ background: "var(--border)" }}
+              >
                 <motion.div
                   className="h-full rounded-full"
-                  style={{ background: 'linear-gradient(90deg, var(--brand), var(--brand-2))' }}
-                  initial={{ width: '0%' }}
+                  style={{
+                    background:
+                      "linear-gradient(90deg, var(--brand), var(--brand-2))",
+                  }}
+                  initial={{ width: "0%" }}
                   animate={{ width: `${count}%` }}
-                  transition={{ ease: 'easeOut', duration: 0.2 }}
+                  transition={{ ease: "easeOut", duration: 0.2 }}
                 />
               </div>
-              <div className="font-mono text-xs tabular-nums" style={{ color: 'var(--text-faint)' }}>
+              <div
+                className="font-mono text-xs tabular-nums"
+                style={{ color: "var(--text-faint)" }}
+              >
                 {count}%
               </div>
             </div>
