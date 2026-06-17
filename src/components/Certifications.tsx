@@ -1,15 +1,18 @@
-import { motion } from 'framer-motion';
-import { Award, ExternalLink, Calendar } from 'lucide-react';
-import { certifications } from '../data/portfolio';
-import { AnimatedSection, SectionEyebrow, StaggerContainer, StaggerItem } from './sections/AnimatedSection';
-import { assetUrl } from '../utils';
+import { motion } from "framer-motion";
+import { Award, ExternalLink, Calendar } from "lucide-react";
+import { certifications } from "../data/portfolio";
+import {
+  AnimatedSection,
+  StaggerContainer,
+  StaggerItem,
+} from "./sections/AnimatedSection";
+import { assetUrl } from "../utils";
 
 export function Certifications() {
   return (
     <AnimatedSection id="certifications" className="section">
       <div className="container-x">
         <div className="mx-auto max-w-2xl text-center">
-          <SectionEyebrow>Certifications</SectionEyebrow>
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +28,7 @@ export function Certifications() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mt-4 text-base md:text-lg"
-            style={{ color: 'var(--text-muted)' }}
+            style={{ color: "var(--text-muted)" }}
           >
             Industry-recognized certifications that validate my technical skills
             and commitment to continuous learning.
@@ -39,7 +42,7 @@ export function Certifications() {
             className="pointer-events-none absolute -inset-x-40 -top-20 -z-10 h-[600px] opacity-30 blur-3xl"
             style={{
               background:
-                'radial-gradient(ellipse at 30% 0%, var(--brand) 0%, transparent 60%), radial-gradient(ellipse at 70% 100%, var(--brand-2) 0%, transparent 60%)',
+                "radial-gradient(ellipse at 30% 0%, var(--brand) 0%, transparent 60%), radial-gradient(ellipse at 70% 100%, var(--brand-2) 0%, transparent 60%)",
             }}
           />
 
@@ -87,8 +90,8 @@ function CertCard({
           className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
           style={{
             background:
-              'linear-gradient(135deg, var(--brand) 0%, transparent 60%)',
-            mixBlendMode: 'overlay',
+              "linear-gradient(135deg, var(--brand) 0%, transparent 60%)",
+            mixBlendMode: "overlay",
           }}
         />
 
@@ -114,7 +117,7 @@ function CertCard({
         {/* Issuer + date row */}
         <div
           className="mb-3 flex items-center justify-between gap-2 text-xs"
-          style={{ color: 'var(--text-faint)' }}
+          style={{ color: "var(--text-faint)" }}
         >
           <span className="flex items-center gap-1.5 truncate font-medium">
             <Award size={12} />
@@ -134,7 +137,7 @@ function CertCard({
         {/* Description */}
         <p
           className="mt-2 flex-1 text-sm leading-relaxed"
-          style={{ color: 'var(--text-muted)' }}
+          style={{ color: "var(--text-muted)" }}
         >
           {cert.description}
         </p>
@@ -146,9 +149,9 @@ function CertCard({
               key={t}
               className="rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider"
               style={{
-                background: 'var(--surface)',
-                color: 'var(--text-muted)',
-                border: '1px solid var(--border)',
+                background: "var(--surface)",
+                color: "var(--text-muted)",
+                border: "1px solid var(--border)",
               }}
             >
               {t}
@@ -161,11 +164,11 @@ function CertCard({
       {cert.credentialUrl && (
         <div
           className="flex items-center justify-between border-t px-5 py-3"
-          style={{ borderColor: 'var(--border)' }}
+          style={{ borderColor: "var(--border)" }}
         >
           <span
             className="inline-flex items-center gap-1.5 text-xs"
-            style={{ color: 'var(--text-faint)' }}
+            style={{ color: "var(--text-faint)" }}
           >
             <Award size={12} /> Credential
           </span>
@@ -174,7 +177,7 @@ function CertCard({
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-1 text-xs font-medium transition-colors hover:text-[var(--brand)]"
-            style={{ color: 'var(--text-muted)' }}
+            style={{ color: "var(--text-muted)" }}
             data-cursor="hover"
           >
             Verify
