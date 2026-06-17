@@ -3,7 +3,7 @@ import { ArrowUpRight, Star } from "lucide-react";
 import { Github } from "./Icons";
 import { useState } from "react";
 import { projects } from "../data/portfolio";
-import { AnimatedSection, SectionEyebrow } from "./sections/AnimatedSection";
+import { AnimatedSection } from "./sections/AnimatedSection";
 
 const filters = ["All", "Web app", "Open source", "Client work"] as const;
 type Filter = (typeof filters)[number];

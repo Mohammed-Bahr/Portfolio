@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 import { experience } from "../data/portfolio";
-import { AnimatedSection, SectionEyebrow } from "./sections/AnimatedSection";
+import { AnimatedSection } from "./sections/AnimatedSection";
 
 export function Experience() {
   return (

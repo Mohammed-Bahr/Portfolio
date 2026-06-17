@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { Download, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { profile, stats } from "../data/portfolio";
 import {
   AnimatedSection,
-  SectionEyebrow,
   StaggerContainer,
   StaggerItem,
 } from "./sections/AnimatedSection";
