@@ -56,7 +56,7 @@ export const skills = {
     { name: 'AWS', level: 82 },
     { name: 'Terraform', level: 80 },
     { name: 'BashScript', level: 85 },
-
+    { name: 'Linux', level: 85 },
   ],
 };
 
